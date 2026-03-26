@@ -1,0 +1,295 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		@font-face {
+		font-family: 'Pretendard-Regular';
+    	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2') format('woff2');
+    	font-weight: 400;
+    	font-display: swap;}
+   		@font-face {
+    	font-family: 'Pretendard-Bold';
+    	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Bold.woff2') format('woff2');
+    	font-weight: 700;
+    	font-display: swap;}
+    	@font-face {
+    	font-family: 'Edge';
+    	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_04@1.0/Ggeuteumuri.woff') format('woff');
+    	font-weight: normal;
+    	font-display: swap;}
+    	@keyframes high-speed-blur {
+    0% { transform: translate(0); text-shadow: 0 0 0 transparent; }
+    
+    /* 왼쪽으로 이동하면서 오른쪽에 잔상 배치 */
+    15% { transform: translate(-3px, 1px); text-shadow: 5px 0 3px rgba(255, 255, 255, 0.7), 10px 0 5px rgba(255, 255, 255, 0.4); }
+    
+    /* 오른쪽 위로 이동하면서 왼쪽 아래에 잔상 배치 */
+    30% { transform: translate(2px, -2px); text-shadow: -5px 2px 3px rgba(255, 255, 255, 0.7), -10px 4px 5px rgba(255, 255, 255, 0.4); }
+    
+    /* 왼쪽 아래로 이동하면서 오른쪽 위에 잔상 배치 */
+    45% { transform: translate(-2px, 3px); text-shadow: 3px -3px 3px rgba(255, 255, 255, 0.7), 6px -6px 5px rgba(255, 255, 255, 0.4); }
+    
+    /* 오른쪽 아래로 이동하면서 왼쪽 위에 잔상 배치 */
+    60% { transform: translate(3px, 2px); text-shadow: -3px -2px 3px rgba(255, 255, 255, 0.7), -6px -4px 5px rgba(255, 255, 255, 0.4); }
+    
+    /* 제자리로 돌아오면서 잔상 제거 */
+    75% { transform: translate(0); text-shadow: 0 0 0 transparent; }
+    
+    /* 아주 짧은 멈춤 (긴장감 조성) */
+    100% { transform: translate(0); text-shadow: 0 0 0 transparent; }
+}
+		body, h1, h2, h3, p{margin: 0px; padding: 0px}
+		html{background: url(image1.jpg);
+			background-attachment: fixed;
+			background-size: cover;
+			width: 100%;
+  			height: 100%;}
+  		::selection {background-color: blue;
+    		color: white}
+		section{padding: 250px 0px;
+			color: black;
+			background-color: white;
+			max-width: 1200px;
+			margin: auto;
+			text-align: center;}
+		section.black{padding: 250px 0px;
+			background: linear-gradient(to bottom, 
+        rgba(255, 255, 255, 1) 0%, 
+        rgba(0, 0, 0, 1) 10%, 
+        rgba(0, 0, 0, 1) 90%, 
+        rgba(255, 255, 255, 1) 100%);
+			max-width: 1200px;
+			margin: auto;}
+		section.final{padding: 250px 0px;
+			background: linear-gradient(to bottom, 
+        rgba(255, 255, 255, 1) 0%, 
+        rgba(0, 0, 0, 1) 40%);
+			max-width: 1200px;
+			margin: auto;}
+		div{width: 700px;
+			margin: auto;}
+		header{background: transparent; 
+   		 	display: flex;
+    		justify-content: center;}
+		header div{width: 850px;
+    		height: 850px;
+   			border-radius: 50%;
+    		background-image: radial-gradient(circle, 
+        	rgba(255, 255, 255, 1) 0%,
+        	rgba(255, 255, 255, 0.6) 40%,
+        	rgba(255, 255, 255, 0) 70%);
+        	display: flex;
+    		flex-direction: column;
+    		justify-content: center;
+    		align-items: center;}
+		h1{font-family: Pretendard-Bold;
+			line-height: 1.25;
+			text-align: center;
+			font-size: 80px;
+			color: blue;}
+		h2{font-family: Pretendard-Bold;
+			line-height: 1.25;
+			text-align: center;
+			font-size: 50px;
+			color: white;}
+		h3{font-family: Pretendard-Bold;
+			line-height: 1.25;
+			text-align: center;
+			font-size: 140px;
+			color: white;
+			animation: high-speed-blur 0.2s linear infinite;
+    		display: inline-block; 
+    		width: 100%;
+    		will-change: transform, text-shadow;}
+		p{font-family: Pretendard-Regular;
+			font-size: 26px;
+			text-align: left;
+			word-break: keep-all;
+			line-height: 1.6}
+		p2{font-family: Pretendard-Regular;
+			font-size: 26px;
+			text-align: center;
+			word-break: keep-all;
+			line-height: 1.6}
+		span.highlight{font-family: Edge;
+			color: red;
+			font-size: 38px}
+		span.highlight2{font-family: Edge;
+			color: red;
+			font-size: 70px;
+			text-align: center;}
+		section.tight{padding-top: 0px}
+		section.countdown{padding:0px}
+		section.none{background-color: transparent;
+			padding: 150px 0px}
+		span.gray{color: lightgray;}
+		.photo1{background-image: url(image2.png);
+			width:700px;
+			text-align: center;
+			padding: 200px 0px;
+			background-repeat: no-repeat;
+			background-position: center}
+		span.blue{color: white;
+   			background-color: blue;
+    		padding: 2px 6px;}
+		.photo2{padding:100px}
+		.contents{padding-top:200px;}
+		.flex-container{display: flex;
+    	align-items: center;
+    	justify-content: center;           
+    	max-width: 1100px;      
+    	margin: 0 auto;}
+    	.pic{background-image: url(image4.png);
+			background-attachment: fixed;
+			background-size: cover;
+			max-width: none;
+			width: 100%;
+  			text-align: center;
+  			background-position: center center}
+  		.pic2{background-image: url(image6.png);
+			background-attachment: fixed;
+			background-size: 100%;
+			max-width: none;
+			width: 100%;
+  			text-align: center;
+  			background-position: center 20px}		
+  		div.countdown{text-align: center;
+  			width: 100%;
+  			margin: auto;}
+  		section.black div {
+    		width: 100%}
+    	.highlight2 {
+    	display: inline-block;
+    	width: 100%;
+    	text-align: center;
+    	line-height: 1.2;
+    	padding-top: 30px}
+    </style>
+</head>
+	<header>
+	<div class="title">
+	<h1>첫인상을 망쳐도<br>친구가 될 수 있다!</h1>
+	</div>
+	</header>
+<body>
+	<section>
+	<div class="photo1">
+		<h2>때는 2025년 여름<h2>
+	</div>
+	<div class=contents>
+		<p>나는 문화생활<span class="gray">(아이돌 콘서트 감상)</span>을 위해 밖에 나왔다. 오랜만의 외출이었지만, 바깥 공기를 즐길 여유는 없었다.</p></div>
+	<div class=contents><p><span class="highlight">공연 시작까지 5분밖에 안 남았기 때문이었다!!</span></p></div>
+	</div>
+	<div class="contents">
+	<div class="flex-container">
+		<p>작열하는 태양 속에서 전력질주를 한 끝에 늦지 않게 도착할 수 있었다. 아이돌 오라버니들이 팬들을 위해 <span class=blue>시원한 물</span>을 준비했다고 했지만 그런 걸 챙길 시간은 없었다. 그렇게 나는 집에서부터 동행한 <span class=blue>미적지근한 생수병</span>을 들고 공연장에 입장했다..</p><img src="image3.png">
+	</div>	
+	</div>
+	<div class="contents">
+		<p>나는 낯을 매우 가리지만 한 번만 만날 사람에게는 아니다. 그런 나에게 콘서트 옆자리 사람은 그 날 하루동안 최고의 친구다. 나는 스캔 후 오른쪽 사람과 친해져 보기로 마음먹었다.<br>공연장의 불이 꺼졌고, 나는 우레와 같은 함성으로 오라버니들을 마주하기 위해 바닥에 두었던 목을 축였다. <span class=blue>물은 아주 달고 시원했다.</span></p></div>
+	</section>
+	<section class=pic>
+	<div class=photo2>
+		<h2>어?<br>물이 왜 시원하지?</h2>
+	</div>
+	</section>
+	<section>
+	<div class="tight">
+		<p>그렇다. 실수로 옆자리 사람의 물을 마셔 버린 것이다.<br>이 사실을 깨달았을 때, 공연 카운트다운이 시작됐다.</p>
+	</div>
+	</section>
+	<section class="none">
+	<div class="contents">
+		<h3>5</h3>
+	</div>
+	</section>
+	<section class=countdown>
+	<div class=countdown>
+		<p2>이 사실을 말해야 하나? 그냥 모른 척 할까?</p2>
+	</div>
+	</section>
+	<section class="none">
+	<div class="contents">
+		<h3>4</h3>
+	</div>
+	</section>
+	<section class="countdown">
+	<div class=countdown>
+		<p2>공연이 시작되면 말할 기회가 없을텐데..</p2>
+	</div>
+	</section>
+	<section class="none">
+	<div class="contents">
+		<h3>3</h3>
+	</div>
+	</section>
+	<section class="countdown">
+	<div class=countdown>
+		<p2>결국 나는 사실을 고하기로 했다.</p2>
+	</div>
+	</section>
+	<section class="none">
+	<div class="contents">
+		<h3>2</h3>
+	</div>
+	</section>
+	<section class="countdown">
+	<div class=countdown>
+		<p2><span class=highlight>“진짜어이없으실거아는데제가헷갈려서물을바꿔마신거같아요ㅜㅜ입은정말안댔어요너무죄송합니다.”</span></p2>
+	</div>
+	</section>
+	<section class="none">
+	<div class="contents">
+		<h3>1</h3>
+	</div>
+	</section>
+	<section>
+	<div class="tight">
+		<p>“아.. 괜찮아요”<br>라고 했지만 그녀는 중요한 순간에 방해받은 것이 무척 당황스러운 것 같았다. <span class="gray">(이해해요)</span></p>
+	</div>
+	<div class="contents">
+		<p>잠깐의 정적<br>그런데, 그녀가</p>
+	</div>
+	</section>
+	<section class="black">
+	<div class=contents>
+		<img src="image5.jpg"; style="width: 25%;">
+		<p2><span class=highlight2>“근데 헷갈리기엔<br>너무 다른 것 같은데 ㅋ..”</span></p2>
+	</div>
+	</section>
+		<section>
+	<div class="tight">
+		<p>라며 헛웃음을 치는 것 아니겠는가.<br>엥? 내잘못은 맞지만 왤케 싸가지가 없지? 친구가 되기는 글렀다.<br>그렇게 공연이 시작되었다.</p>
+	</div>
+	<div class="contents">
+		<img src="image7.png"; style="width: 70%;">
+		<p>신경쓰지 않으려 했지만 나는 남 눈치보기 1위 mbti INFP로, 공연이 진행되는 내내 옆자리가 신경쓰였다. 그녀는 자신의 오른쪽 사람과 친해져 나에게는 눈길도 주지 않았다. 공연은 하이라이트에 접어들어 관객들은 모두 자리에서 일어나 있었고, 함께 방방 뛰며 공연을 즐기고 있었다. 나는 조금 외로웠지만, 콘서트에 친구를 사귀기 위해 오는 건 아니니까 무대에 집중하며 감상하고 있었는데....</p></div>
+	</section>
+	<section class=pic2>
+	<div class=photo2>
+		<h2>그녀가 나에게 슬쩍 어깨동무를 하는 것 아니겠는가.</h2>
+	</div>
+	</section>
+	<section>
+	<div class="tight">
+		<p><span class="highlight">뭐지???</span><br>몹시 당황스러웠지만 노래가 너무 신나서 합리적인 사고를 할 수 없었다. 그렇게 나는 <span class=blue>생수 사건</span>은 잊은 채 그녀와 십년지기 친구처럼 함께 공연을 즐겼다..</p>
+	</div>
+	<div class=contents></div>
+	<div class="flex-container">
+		<p>공연이 막바지에 다다랐다. 앵콜 타임에 그녀는 함께 사진을 찍자고 했다.. 나는 낯을 가릴 뿐 아니라 거절도 못하는 성격이기 때문에 함께 셀카를 찍었다. 공연 종료 후에는 눈웃음 지으며 “내일도 오세요?” 라고 묻기까지 했다.</p><img src="image8.png" style="width: 300px; height: auto;">
+	</div>
+	<div class="contents">
+		<p><span class=gray>물론 다음 날에도 가긴 했지만 나는 낯을 가리기 때문에 두 번 다시 그녀를 만나는 일은 없었다..</span></p>
+	</div>
+	<div class="contents">
+		<p>그렇지만 그녀가 어떻게 나에게 마음을 열게 되었을지 종종 생각하게 된다. 같은 대상을 사랑하는 나의 진심이 그녀에게 닿은 것일까?<br><span class=highlight>“근데 헷갈리기엔 너무 다른 것 같은데 ㅋ..”</span><br>이게 그녀의 관심 표현 방식이었을까? 어쨌든, 음악으로 화합해서 그 순간만큼은 최고의 친구가 되는 경험이 꽤나 즐거웠다.</p>
+	</div>
+	</section>
+	<section class=final>
+	<div class=contents>
+		<h2><span class=highlight2>근데 너무 무서워서 다음에는<br>이런 사람 옆에 앉고 싶지 않다;;</span></h2>
+	</div>
+	</section>
+</body>
+</html>
